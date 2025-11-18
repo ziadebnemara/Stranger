@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Stranger Menu</title>
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@700&family=Playfair+Display:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body class="fade-in">
+        <!-- This is Start -->
+        <header class="site-header">
+            <!-- <div class="logo">STRANGER<br><span>THINGS</span></div> -->
+            <div class="logo">
+                <a href="javascript:void(0)">
+                    <img
+                        src="public/stranger-logo.png"
+                        alt="Stranger Things"
+                        class="logo-img"
+                    />
+                </a>
+            </div>
+            <div id="countdown" class="countdown" aria-live="polite"></div>
+        </header>
+
+        <main class="hero">
+            <p class="centermenu">
+                <a
+                    class="menu-link"
+                    href="public/menu.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    >Menu</a
+                >
+            </p>
+        </main>
+
+        <!-- YouTube player container (hidden visually) -->
+        <div id="yt-player-container" aria-hidden="true">
+            <div id="yt-player"></div>
+        </div>
+
+        <!-- Unmute / Mute toggle (visible) -->
+        <button
+            id="audio-toggle"
+            aria-pressed="false"
+            title="Toggle background music"
+        >
+            🔇
+        </button>
+
+        <footer class="site-footer centermenu">
+            <p class="inline slightl">&copy; 2025 Stranger Menu Website</p>
+            <p class="block slightl">
+                Learn about us:
+                <a
+                    class="contact-link"
+                    href="public/video.mp4"
+                    target="_blank"
+                    rel="noopener"
+                    >Video</a
+                >
+                <a
+                    class="contact-link"
+                    href="public/photos.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    >Photos</a
+                >
+            </p>
+        </footer>
+
+        <script src="main.js" defer></script>
+    </body>
+</html>
